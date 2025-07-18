@@ -2,7 +2,7 @@ import multer from 'multer';
 import path from 'path';
 import fs from 'fs';
 
-const imgDir = path.join(path.resolve(), 'uploads');
+const imgDir = path.join(path.resolve(), './uploads');
 if (!fs.existsSync(imgDir)) {
   fs.mkdirSync(imgDir, { recursive: true });
 }
